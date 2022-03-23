@@ -44,6 +44,9 @@
                             $('.modal').modal('hide');
                         <?php }?>
                     }
+                    <?php if($form_csrf){?>
+                        $('<?= $form_csrf;?>').val(data.csrf_hash); // CSRF hash
+                    <?php }?>
                 },
                 'error': function(xmlhttprequest, textstatus, message) {
                     Swal.fire({

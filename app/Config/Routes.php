@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('admin/dashboard/', 'Admin\Dashboard::index',['filter' => 'authGuard']);
 $routes->get('admin/users/profil', 'Admin\Users::profil',['filter' => 'authGuard']);
+$routes->post('admin/users/update', 'Admin\Users::update',['filter' => 'authGuard']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing

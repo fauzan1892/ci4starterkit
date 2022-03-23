@@ -6,6 +6,7 @@
             </div>
             <div class="card-body">
                 <form method='POST' id="profil_form">
+                    <input type="hidden" id="csrf_name_profil" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" />
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -32,6 +33,7 @@
                             </div>
                         </div>
                     </div>
+                    <input type="hidden" value="<?= $edit->id;?>" name="id">
                     <button type="submit" class="btn btn-primary btn-md">Save</button>
                 </form>
             </div>
@@ -62,7 +64,8 @@
             'tipe' => 'edit',
             // 'table' => '#input02',
             'idSubmit' => '#profil_form',
-            'urlForm' => base_url('admin/users/edit_profil'),
+            'urlForm' => base_url('admin/users/update'),
             'modal' => '',
+            'form_csrf' => '#csrf_name_profil'
         ]);
 ?>

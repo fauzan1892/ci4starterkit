@@ -50,3 +50,225 @@ CRITICAL - 2022-03-23 14:36:39 --> Invalid file: components/admin/ajax_form.php
 #14 C:\xampp\htdocs\project\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #15 C:\xampp\htdocs\project\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #16 {main}
+CRITICAL - 2022-03-23 15:01:50 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:01:57 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:02:27 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:03:46 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:04:52 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:05:30 --> Call to a member function listErrors() on null
+#0 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(832): App\Controllers\Admin\Users->update('1')
+#1 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-23 15:08:53 --> Call to a member function listErrors() on null
+#0 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(832): App\Controllers\Admin\Users->update('1')
+#1 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-23 15:09:07 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:09:14 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:21:06 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:24:06 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:24:23 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:25:15 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:25:37 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:25:44 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:25:59 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:26:01 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:27:13 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(832): App\Controllers\Admin\Users->update()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-23 15:27:48 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:29:27 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(832): App\Controllers\Admin\Users->update()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-23 15:30:46 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:35:36 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:35:47 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(832): App\Controllers\Admin\Users->update()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-23 15:35:54 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-03-23 15:38:38 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(832): App\Controllers\Admin\Users->update()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-23 15:47:59 --> The action you requested is not allowed.
+#0 C:\xampp\htdocs\project\ci4starterkit\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\xampp\htdocs\project\ci4starterkit\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\xampp\htdocs\project\ci4starterkit\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('admin/users/upd...', 'before')
+#4 C:\xampp\htdocs\project\ci4starterkit\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project\ci4starterkit\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project\ci4starterkit\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
