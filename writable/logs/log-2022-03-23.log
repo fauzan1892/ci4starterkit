@@ -1,0 +1,52 @@
+CRITICAL - 2022-03-23 10:00:18 --> syntax error, unexpected 'jffj' (T_STRING), expecting ')'
+#0 C:\xampp\htdocs\project\codeigniter4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('admin/dashboard...')
+#1 C:\xampp\htdocs\project\codeigniter4\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('admin/dashboard...')
+#2 C:\xampp\htdocs\project\codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\project\codeigniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-03-23 10:10:31 --> Table 'ci4starterkit.users_rolejfjffj' doesn't exist
+CRITICAL - 2022-03-23 10:10:31 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\project\codeigniter4\vendor\irsyadulibad\codeigniter4-datatables\src\QueryDataTable.php(42): CodeIgniter\Database\BaseConnection->getFieldNames('users_rolejfjff...')
+#1 C:\xampp\htdocs\project\codeigniter4\vendor\irsyadulibad\codeigniter4-datatables\src\QueryDataTable.php(23): Irsyadulibad\DataTables\QueryDataTable->setListFields()
+#2 C:\xampp\htdocs\project\codeigniter4\app\Controllers\admin\Dashboard.php(20): Irsyadulibad\DataTables\QueryDataTable->make()
+#3 C:\xampp\htdocs\project\codeigniter4\system\CodeIgniter.php(832): App\Controllers\Admin\Dashboard->json()
+#4 C:\xampp\htdocs\project\codeigniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#5 C:\xampp\htdocs\project\codeigniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\project\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\project\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-03-23 14:36:19 --> Call to a member function view() on null
+#0 C:\xampp\htdocs\project\codeigniter4\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\project\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\project\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('contents/admin/...', Array, true)
+#3 C:\xampp\htdocs\project\codeigniter4\app\Views\layouts\admin.php(49): view('contents/admin/...')
+#4 C:\xampp\htdocs\project\codeigniter4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\project\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\project\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('layouts/admin', Array, true)
+#7 C:\xampp\htdocs\project\codeigniter4\app\Controllers\admin\Users.php(23): view('layouts/admin', Array)
+#8 C:\xampp\htdocs\project\codeigniter4\system\CodeIgniter.php(832): App\Controllers\Admin\Users->profil()
+#9 C:\xampp\htdocs\project\codeigniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+#10 C:\xampp\htdocs\project\codeigniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\project\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\project\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-03-23 14:36:39 --> Invalid file: components/admin/ajax_form.php
+#0 C:\xampp\htdocs\project\codeigniter4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/admi...')
+#1 C:\xampp\htdocs\project\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('components/admi...', Array, true)
+#2 C:\xampp\htdocs\project\codeigniter4\app\Views\contents\admin\profil\index.php(66): view('components/admi...', Array)
+#3 C:\xampp\htdocs\project\codeigniter4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\project\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\project\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('contents/admin/...', Array, true)
+#6 C:\xampp\htdocs\project\codeigniter4\app\Views\layouts\admin.php(49): view('contents/admin/...')
+#7 C:\xampp\htdocs\project\codeigniter4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\project\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\project\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('layouts/admin', Array, true)
+#10 C:\xampp\htdocs\project\codeigniter4\app\Controllers\admin\Users.php(23): view('layouts/admin', Array)
+#11 C:\xampp\htdocs\project\codeigniter4\system\CodeIgniter.php(832): App\Controllers\Admin\Users->profil()
+#12 C:\xampp\htdocs\project\codeigniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+#13 C:\xampp\htdocs\project\codeigniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\project\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\project\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#16 {main}
