@@ -59,7 +59,8 @@ $(document).ready(function() {
                 "render": function(data, type, row, meta) {
                     return `<center>
                                 <img src="${AvatarExists('<?= base_url('assets/uploads/avatar');?>/'+row.avatar)}" 
-                                    class="img-fluid" style="width:70px;height:70px;">
+                                    class="img-fluid" 
+                                    style="width:70px;height:70px;">
                             </center>`;
                 }
             },
