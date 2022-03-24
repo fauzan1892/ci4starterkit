@@ -32,8 +32,12 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('admin/dashboard/', 'Admin\Dashboard::index',['filter' => 'authGuard']);
+
+// users
+$routes->get('admin/users/', 'Admin\Users::index',['filter' => 'authGuard']);
 $routes->get('admin/users/profil', 'Admin\Users::profil',['filter' => 'authGuard']);
 $routes->post('admin/users/update', 'Admin\Users::update',['filter' => 'authGuard']);
+$routes->post('admin/users/data', 'Admin\Users::data',['filter' => 'authGuard']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing

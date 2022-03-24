@@ -10,22 +10,34 @@
     </div>
     <ul class="app-menu">
         <li>
-            <a class="app-menu__item active" href="<?= base_url('admin/dashboard');?>">
+            <a class="app-menu__item <?= $sidebar == 'dashboard' ? 'active' : ''?>" href="<?= base_url('admin/dashboard');?>">
                 <i class="app-menu__icon fa fa-dashboard"></i>
                 <span class="app-menu__label">Dashboard</span>
             </a>
         </li>
-        <li class="treeview">
-            <a class="app-menu__item" href="#" data-toggle="treeview"><i
-                class="app-menu__icon fa fa-laptop"></i>
-                <span class="app-menu__label">UI Elements</span>
+        <li class="treeview <?= $sidebar == 'users' ? 'is-expanded' : ''?>">
+            <a class="app-menu__item" href="#" data-toggle="treeview">
+                <i class="app-menu__icon fa fa-cog"></i>
+                <span class="app-menu__label">Pengaturan</span>
                 <i class="treeview-indicator fa fa-angle-right"></i>
             </a>
             <ul class="treeview-menu">
                 <li>
+                    <a class="treeview-item <?= $sidebar == 'users' ? 'active' : ''?>" href="<?= base_url('admin/users');?>">
+                        <i class="icon fa fa-user"></i>
+                        Users
+                    </a>
+                </li>
+                <li>
                     <a class="treeview-item" href="bootstrap-components.html">
-                        <i class="icon fa fa-circle-o"></i>
-                        Bootstrap Elements
+                        <i class="icon fa fa-ban"></i>
+                        Roles
+                    </a>
+                </li>
+                <li>
+                    <a class="treeview-item" href="bootstrap-components.html">
+                        <i class="icon fa fa-pencil"></i>
+                        Profil Aplikasi
                     </a>
                 </li>
             </ul>

@@ -22,10 +22,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/css/main.css">
+    
+    <!-- DataTables -->
+    <link rel="stylesheet" href="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/plugins/datatables-bs4/css/responsive.bootstrap4.min.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="<?= base_url('assets/admin/vali-admin-3.0.0/docs/js/jquery-3.3.1.min.js');?>"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/js/popper.min.js"></script>
     <script src="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/js/bootstrap.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -54,6 +58,21 @@
     <script src="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/js/plugins/pace.min.js"></script>
     <!-- Page specific javascripts-->
     <script type="text/javascript" src="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/js/plugins/chart.js">
+    </script>
+    <script src="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/plugins/datatables-bs4/js/jquery.dataTables.min.js"></script>
+    <script src="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/plugins/datatables-bs4/js/dataTables.responsive.min.js"></script>
+    <script src="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/plugins/datatables-bs4/js/responsive.bootstrap4.min.js"></script>
+    <script>
+        AvatarExists = (url) => {
+            var img = new Image();
+            img.src = url;
+            if (img.height > 0) {
+                return url;
+            } else {
+                return "<?= base_url('assets/uploads/default/avatar-1.png');?>";
+            }
+        }
     </script>
 </body>
 

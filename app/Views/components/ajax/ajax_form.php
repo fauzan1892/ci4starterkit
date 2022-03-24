@@ -43,6 +43,9 @@
                         <?php if($modal == 'close'){?>
                             $('.modal').modal('hide');
                         <?php }?>
+                        <?php if($idSubmit == '#avatar_form'){?>
+                            $("#avatar_img").attr("src","<?= base_url('assets/uploads/avatar');?>/"+data.avatar);
+                        <?php }?>
                     }
                     <?php if($form_csrf){?>
                         $('<?= $form_csrf;?>').val(data.csrf_hash); // CSRF hash

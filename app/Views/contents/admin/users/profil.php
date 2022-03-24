@@ -27,9 +27,9 @@
                                     id="email" placeholder="" />
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label for="password">Password <small class="text-danger pr-3">* Opsional</small></label>
 								<div class="input-group" id="ngumpet">
-                                	<input type="password" class="form-control" required name="password" id="password" placeholder="Katasandi">
+                                	<input type="password" class="form-control" required name="password" id="password" placeholder="Ganti Password">
 									<div class="input-group-append">
 										<a href="javascript:void:(0)" style="text-decoration:none" class="input-group-text"><i class="fa fa-eye-slash text-danger" aria-hidden="true"></i></a>
 									</div>
@@ -49,43 +49,21 @@
                 <i class="fa fa-image mr-1"></i> Foto Profil
             </div>
             <div class="card-body">
-                <img class="img-fluid" src="<?= cek_file_avatar($edit->avatar);?>" alt="User Image">
+                <img class="img-fluid" id="avatar_img" src="<?= cek_file_avatar($edit->avatar);?>" alt="User Image">
             </div>
             <div class="card-footer text-muted">
                 <form method='POST' enctype="multipart/form-data" id="avatar_form">
+                    <input type="hidden" id="csrf_name_avatar" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" />
                     <div class="form-group">
                         <label for="avatar">Avatar</label>
                         <input type="file" class="form-control" name="avatar" id="avatar" placeholder="" />
+                        <input type="hidden" value="<?= $edit->avatar;?>" name="avatar_edit">
+                        <input type="hidden" value="<?= $edit->id;?>" name="id">
                     </div>
-                    <button class="btn btn-primary btn-md">Save</button>
+                    <button type="submit" class="btn btn-primary btn-md">Save</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
-<?php 
-    echo view('components/ajax/ajax_form',[
-            'tipe' => 'edit',
-            // 'table' => '#input02',
-            'idSubmit' => '#profil_form',
-            'urlForm' => base_url('admin/users/update'),
-            'modal' => '',
-            'form_csrf' => '#csrf_name_profil'
-        ]);
-?>
-<script>
-	$(document).ready(function() {
-		$("#ngumpet a").on('click', function(event) {
-			event.preventDefault();
-			if($('#ngumpet input').attr("type") == "text"){
-				$('#ngumpet input').attr('type', 'password');
-				$('#ngumpet i').addClass( "fa-eye-slash text-danger" );
-				$('#ngumpet i').removeClass( "fa-eye text-success" );
-			}else if($('#ngumpet input').attr("type") == "password"){
-				$('#ngumpet input').attr('type', 'text');
-				$('#ngumpet i').removeClass( "fa-eye-slash text-danger" );
-				$('#ngumpet i').addClass( "fa-eye text-success" );
-			}
-		});
-	});
-</script>
+<?= view('contents/admin/users/js/profil_js');?>
