@@ -5,7 +5,7 @@
             'idSubmit' => '#profil_form',
             'urlForm' => base_url('admin/users/update'),
             'modal' => '',
-            'form_csrf' => '#csrf_name_profil'
+            // 'form_csrf' => '#csrf_name_profil'
         ]);
     echo view('components/ajax/ajax_form',[
             'tipe' => 'edit',
@@ -13,7 +13,7 @@
             'idSubmit' => '#avatar_form',
             'urlForm' => base_url('admin/users/update_avatar'),
             'modal' => '',
-            'form_csrf' => '#csrf_name_avatar'
+            // 'form_csrf' => '#csrf_name_avatar'
         ]);
 ?>
 <script>

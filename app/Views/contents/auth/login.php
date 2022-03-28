@@ -1,6 +1,6 @@
 <div class="login-box">
     <form class="login-form" method="POST" action="<?= base_url('login/auth');?>">
-        <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" />
+        <!-- <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" /> -->
         <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user-circle mr-1"></i>SIGN IN</h3>
         <div class="form-group">
             <label class="control-label">USERNAME / E-MAIL</label>

@@ -18,9 +18,11 @@ class Datatables
         $order = " ORDER BY ".$_POST['columns'][$order_field]['data']." ".$order_ascdesc;
 
         $setWhere = array();
-        foreach ($where as $key => $value)
-        {
-            $setWhere[] = $key."='".$value."'";
+        if(!empty($where)){
+            foreach ($where as $key => $value)
+            {
+                $setWhere[] = $key."='".$value."'";
+            }
         }
         $fwhere = implode(' AND ', $setWhere);
         $cari = implode(" LIKE '%".$search."%' OR ", $cari)." LIKE '%".$search."%'";

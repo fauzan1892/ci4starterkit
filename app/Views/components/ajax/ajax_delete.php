@@ -1,16 +1,16 @@
-<?php if(isset($pesan)){ $psn = $pesan; }else{ $psn = 'Apakah anda yakin data akan dihapus ?';}?>
+<?php if(isset($pesan)){ $psn = $pesan; }else{ $psn = 'Are you sure the data will be deleted ?';}?>
 <script>
     $('<?= $table;?> tbody').on('click', '<?= $idSubmit;?>', function(){
         var did = $(this).attr('data-id');
         Swal.fire({
-            title: 'Hapus Data ! ',
+            title: 'Delete Data ! ',
             text: "<?= $psn;?>",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Oke',
-            cancelButtonText: 'Batal'
+            confirmButtonText: 'Ok',
+            cancelButtonText: 'Cancel'
         }).then((result) => {
             if (result.value) {
                 $.ajax({
@@ -21,7 +21,7 @@
                     timeout:6000,
                     beforeSend: function() {
                         Swal.fire({
-                            title: 'Memuat',
+                            title: 'Loading ...',
                             didOpen: () => {
                                 Swal.showLoading();
                             },
@@ -30,17 +30,17 @@
                     success: function(data){
                         if(data.cek == 'error'){
                             Swal.fire({
-                                title: 'Gagal !',
+                                title: 'Failed !',
                                 html: data.msg,
                                 icon: 'warning',
-                                confirmButtonText: 'Oke',
+                                confirmButtonText: 'Ok',
                             })
                         }else{
                             Swal.fire({
-                                title: 'Berhasil !',
+                                title: 'Success !',
                                 html: data.msg,
                                 icon: 'success',
-                                confirmButtonText: 'Oke',
+                                confirmButtonText: 'Ok',
                             });
                             $("<?= $table;?>").DataTable().ajax.reload();
                         }
@@ -56,10 +56,10 @@
                 }); 
             }else{
                 Swal.fire({
-                    title: "Dibatalkan !",
+                    title: "Canceled !",
                     icon: "success",
                     confirmButtonColor: '#3085d6',
-                    confirmButtonText: 'Oke',
+                    confirmButtonText: 'Ok',
                 })
             }
         });

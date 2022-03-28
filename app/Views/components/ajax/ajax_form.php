@@ -13,7 +13,7 @@
                 'timeout':60000,
                 'beforeSend': function() {
                     Swal.fire({
-                        title: 'Memuat',
+                        title: 'Loading...',
                         didOpen: () => {
                             Swal.showLoading();
                         },
@@ -22,17 +22,17 @@
                 'success': function(data){
                     if(data.cek == 'error'){
                         Swal.fire({
-                            title: 'Gagal !',
+                            title: 'Failed !',
                             html: data.msg,
                             icon: 'warning',
-                            confirmButtonText: 'Oke',
+                            confirmButtonText: 'Ok',
                         });
                     }else{
                         Swal.fire({
-                            title: 'Berhasil !',
+                            title: 'Success !',
                             html: data.msg,
                             icon: 'success',
-                            confirmButtonText: 'Oke',
+                            confirmButtonText: 'Ok',
                         });
                         <?php if(isset($table)){?>
                             $("<?= $table;?>").DataTable().ajax.reload();
@@ -44,17 +44,15 @@
                             $('.modal').modal('hide');
                         <?php }?>
                         <?php if($idSubmit == '#avatar_form'){?>
+                            $("#avatar_edit").val(data.avatar);
                             $("#avatar_img").attr("src","<?= base_url('assets/uploads/avatar');?>/"+data.avatar);
                         <?php }?>
                     }
-                    <?php if($form_csrf){?>
-                        $('<?= $form_csrf;?>').val(data.csrf_hash); // CSRF hash
-                    <?php }?>
                 },
                 'error': function(xmlhttprequest, textstatus, message) {
                     Swal.fire({
                         title: 'Error Request Timeout !',
-                        text: "terjadi error mohon cek kembali internet anda !",
+                        text:  message,
                         icon: 'error',
                         confirmButtonText: 'Oke',
                     })

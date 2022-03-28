@@ -18,7 +18,7 @@ class Filters extends BaseConfig
      * @var array
      */
     public $aliases = [
-        'csrf'          => CSRF::class,
+        // 'csrf'          => CSRF::class,
         'toolbar'       => DebugToolbar::class,
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
@@ -35,7 +35,7 @@ class Filters extends BaseConfig
     public $globals = [
         'before' => [
             // 'honeypot',
-            'csrf',
+            // 'csrf',
             // 'invalidchars',
         ],
         'after' => [
@@ -55,8 +55,8 @@ class Filters extends BaseConfig
      * @var array
      */
     public $methods = [
-        'get'  => ['csrf'],
-        'post' => ['csrf'],
+        // 'get'  => ['csrf'],
+        // 'post' => ['csrf'],
     ];
 
     /**

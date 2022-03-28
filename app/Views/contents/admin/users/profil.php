@@ -6,7 +6,7 @@
             </div>
             <div class="card-body">
                 <form method='POST' id="profil_form">
-                    <input type="hidden" id="csrf_name_profil" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" />
+                    <!-- <input type="hidden" id="csrf_name_profil" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" /> -->
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -53,11 +53,11 @@
             </div>
             <div class="card-footer text-muted">
                 <form method='POST' enctype="multipart/form-data" id="avatar_form">
-                    <input type="hidden" id="csrf_name_avatar" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" />
+                    <!-- <input type="hidden" id="csrf_name_avatar" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" /> -->
                     <div class="form-group">
                         <label for="avatar">Avatar</label>
                         <input type="file" class="form-control" name="avatar" id="avatar" placeholder="" />
-                        <input type="hidden" value="<?= $edit->avatar;?>" name="avatar_edit">
+                        <input type="hidden" value="<?= $edit->avatar;?>" name="avatar_edit" id="avatar_edit">
                         <input type="hidden" value="<?= $edit->id;?>" name="id">
                     </div>
                     <button type="submit" class="btn btn-primary btn-md">Save</button>
