@@ -28,7 +28,7 @@
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+<div class="modal fade" id="modelId" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -40,7 +40,7 @@
                 </button>
             </div>
             <form method="post" id="AddUsers">
-                <input type="hidden" id="csrf_name_addusers" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" />
+                <!-- <input type="hidden" id="csrf_name_addusers" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" /> -->
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-6">
@@ -95,8 +95,10 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save</button>
+        <div class="btn-group">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Kembali</button>
+            <button type="submit" class="btn btn-success">Simpan</button>
+        </div>
                 </div>
             </form>
         </div>

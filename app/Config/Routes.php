@@ -38,6 +38,8 @@ $routes->get('admin/users/', 'Admin\Users::index',['filter' => 'authGuard']);
 $routes->get('admin/users/profil', 'Admin\Users::profil',['filter' => 'authGuard']);
 $routes->post('admin/users/update', 'Admin\Users::update',['filter' => 'authGuard']);
 $routes->post('admin/users/data', 'Admin\Users::data',['filter' => 'authGuard']);
+$routes->post('form/process', 'Form::process');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

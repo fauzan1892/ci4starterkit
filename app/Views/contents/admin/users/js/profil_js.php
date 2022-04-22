@@ -18,16 +18,16 @@
 ?>
 <script>
 	$(document).ready(function() {
-		$("#ngumpet a").on('click', function(event) {
+		$("#pw_profil a").on('click', function(event) {
 			event.preventDefault();
-			if($('#ngumpet input').attr("type") == "text"){
-				$('#ngumpet input').attr('type', 'password');
-				$('#ngumpet i').addClass( "fa-eye-slash text-danger" );
-				$('#ngumpet i').removeClass( "fa-eye text-success" );
-			}else if($('#ngumpet input').attr("type") == "password"){
-				$('#ngumpet input').attr('type', 'text');
-				$('#ngumpet i').removeClass( "fa-eye-slash text-danger" );
-				$('#ngumpet i').addClass( "fa-eye text-success" );
+			if($('#pw_profil input').attr("type") == "text"){
+				$('#pw_profil input').attr('type', 'password');
+				$('#pw_profil i').addClass( "fa-eye-slash text-danger" );
+				$('#pw_profil i').removeClass( "fa-eye text-success" );
+			}else if($('#pw_profil input').attr("type") == "password"){
+				$('#pw_profil input').attr('type', 'text');
+				$('#pw_profil i').removeClass( "fa-eye-slash text-danger" );
+				$('#pw_profil i').addClass( "fa-eye text-success" );
 			}
 		});
 	});

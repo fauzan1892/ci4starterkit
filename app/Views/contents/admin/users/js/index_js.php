@@ -66,9 +66,6 @@ $(document).ready(function() {
                 "data": "id",
                 "render": function(data, type, row, meta) {
                     return `<div class="btn-group" role="group">
-								<button type="button" data-id="${row.id}" class="btn btn-secondary btn-sm" title="Autentikasi">
-									<i class="fa fa-ban"></i>
-								</button>
 								<button type="button" data-id="${row.id}" class="btn btn-success btn-sm edit" title="Edit">
 									<i class="fa fa-edit"></i>
 								</button>
@@ -90,15 +87,22 @@ $(document).ready(function() {
 </script>
 <?php 
     echo view('components/ajax/ajax_form',[
-            'tipe' => 'tambah',
-            'table' => '#table-users-csrf',
-            'idSubmit' => '#AddUsers',
-            'urlForm' => base_url('admin/users/store'),
-            'modal' => 'close',
+            'tipe'      => 'tambah',
+            'table'     => '#table-users-csrf',
+            'idSubmit'  => '#AddUsers',
+            'urlForm'   => base_url('admin/users/store'),
+            'modal'     => 'close',
         ]);
     echo view('components/ajax/ajax_delete',[
-            'table' => '#table-users-csrf',
-            'idSubmit' => '.delete',
-            'urlForm' => base_url('admin/users/delete'),
+            'table'     => '#table-users-csrf',
+            'idSubmit'  => '.delete',
+            'urlForm'   => base_url('admin/users/delete'),
+        ]);
+    echo view('components/ajax/ajax_edit_modal',[
+            'tableIdEdit'     => 'table-users-csrf',
+            'classButtonEdit' => 'edit',
+            'modalIdEdit'     => 'modal-edituser',
+            'urlModalEdit'    => base_url('admin/users/edit'),
+            'modal_size'      => 'modal-lg',
         ]);
 ?>

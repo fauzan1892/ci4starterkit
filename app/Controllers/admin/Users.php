@@ -52,6 +52,25 @@ class Users extends BaseController
 
     /**
      * 
+     * Ubah edit
+     */
+    public function edit()
+    {
+        $id = $this->request->getPost('id');
+        $getid = $this->usermodel->getUser($id)->getRow();
+        if(!$getid){ 
+            echo 'Tidak ada data'; 
+        }else{
+            $data = [
+                'edit' => $getid,
+                'roles' => $this->rolesmodel->getRoles()->getResult()
+            ]; 
+            echo view('contents/admin/users/index/modal-edit', $data);
+        }
+    }
+
+    /**
+     * 
      * Ubah Profil
      */
     public function profil()
@@ -143,8 +162,14 @@ class Users extends BaseController
 
             $password = password_hash($this->request->getPost("password", FILTER_SANITIZE_FULL_SPECIAL_CHARS), PASSWORD_DEFAULT);
             $builder = $this->db->table("users");
-            if($password){
+            if($this->request->getPost("password") != null){
                 $builder->set('password', $password);
+            }
+            if($this->request->getGet("tipe") == 'edit'){
+                $builder->set('phone', $this->request->getPost('phone', FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+                $builder->set('address', $this->request->getPost('address', FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+                $builder->set('active_users', $this->request->getPost('active_users', FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+                $builder->set('users_role_id', $this->request->getPost('users_role_id', FILTER_SANITIZE_FULL_SPECIAL_CHARS));
             }
             $builder->where("id", $this->request->getPost("id"));
             $builder->update($data);
@@ -185,7 +210,8 @@ class Users extends BaseController
         {
             $imageFile = $this->request->getFile('avatar');
             $fileName = $imageFile->getRandomName();
-            $imageFile->move('assets/uploads/avatar/', $fileName);
+            // $imageFile->move(WRITEPATH . 'uploads/avatar',$fileName);
+            $imageFile->move(ROOTPATH . 'public/assets/uploads/avatar/', $fileName);
 
             $data = [
                 'avatar' => $fileName,
@@ -223,7 +249,6 @@ class Users extends BaseController
         {
             // $builder = $this->db->table("users");
             // $builder->delete(["id" => $id]);
-            
             $data = [
                 'deleted_at' => date('Y-m-d H:i:s'),
             ];

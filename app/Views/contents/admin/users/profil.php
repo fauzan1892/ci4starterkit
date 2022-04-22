@@ -28,8 +28,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="password">Password <small class="text-danger pr-3">* Opsional</small></label>
-								<div class="input-group" id="ngumpet">
-                                	<input type="password" class="form-control" required name="password" id="password" placeholder="Ganti Password">
+								<div class="input-group" id="pw_profil">
+                                	<input type="password" class="form-control" name="password" id="password" placeholder="Ganti Password">
 									<div class="input-group-append">
 										<a href="javascript:void:(0)" style="text-decoration:none" class="input-group-text"><i class="fa fa-eye-slash text-danger" aria-hidden="true"></i></a>
 									</div>
