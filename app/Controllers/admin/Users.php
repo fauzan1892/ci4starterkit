@@ -46,7 +46,7 @@ class Users extends BaseController
         $query = "SELECT users_role.roles, users.* FROM users LEFT JOIN users_role ON users_role.id=users.users_role_id";
         $where = null;
         $isWhere = " users.deleted_at IS NULL";
-        $cari = array('name');
+        $cari = array('name','username','email','roles');
         echo $this->DataTables->BuildDatatables($query, $where, $isWhere, $cari);
     }
 
