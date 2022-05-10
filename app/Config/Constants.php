@@ -86,4 +86,4 @@ $bsurl = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "h
 $bsurl .= "://" . $_SERVER['HTTP_HOST'];
 $bsurl .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
 
-defined('BASESEURL') || define('BASESEURL',$bsurl);
+defined('BASESEURL') || define('BASESEURL',$protocol);

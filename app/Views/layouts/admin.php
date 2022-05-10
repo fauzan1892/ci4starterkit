@@ -64,6 +64,9 @@
     <script src="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/plugins/datatables-bs4/js/dataTables.responsive.min.js"></script>
     <script src="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/plugins/datatables-bs4/js/responsive.bootstrap4.min.js"></script>
     <script>
+        $(document).ready(function () {
+            $('#example1').DataTable({resonsive:true});
+        });
         AvatarExists = (url) => {
             var img = new Image();
             img.src = url;
