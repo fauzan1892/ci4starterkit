@@ -43,17 +43,16 @@
                                 <div class="col-sm-4">Roles</div>
                                 <div class="col-sm-8"><?= $edit->roles;?></div>
                             </div>
-                            <div class="row mt-3">
+                            <div class="row mt-3 mb-3">
                                 <div class="col-sm-4">Created at</div>
                                 <div class="col-sm-8"><?= $edit->created_at;?></div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 text-center">
                             <img class="img-fluid" style="border-radius:20px;height:200px;object-fit:cover;" 
                                 id="avatar_img" src="<?= cek_file_avatar($edit->avatar);?>" alt="User Image">
                         </div>
                     </div>
-                    
                 </div>
                 <div class="tab-pane fade" id="profile">
                     <div class="row mt-4">
