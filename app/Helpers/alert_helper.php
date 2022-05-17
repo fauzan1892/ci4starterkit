@@ -19,3 +19,27 @@ function alert_bs() {
     }
 }
 
+function alert_swal() {
+  $session = \Config\Services::session();
+  if($session->getFlashdata('success')){
+      echo '<script>
+              Swal.fire({
+                  title: "Success !",
+                  html: "'.$session->getFlashdata('success').'",
+                  icon: "success",
+                  confirmButtonText: "Ok",
+              });
+            </script>';
+      
+  }
+  if($session->getFlashdata('failed')){
+    echo '<script>
+          Swal.fire({
+              title: "Failed !",
+              html: "'.$session->getFlashdata('failed').'",
+              icon: "warning",
+              confirmButtonText: "Ok",
+          });
+        </script>';
+  }
+}

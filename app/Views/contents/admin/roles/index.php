@@ -1,4 +1,4 @@
-<?= alert_bs();?>
+<?= alert_swal();?>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#modelId">
     <i class="fa fa-plus"></i> Hak Akses
@@ -57,9 +57,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="<?= base_url("admin/roles/delete/$r->id");?>" 
+                            <a href="javascript:void(0)" 
                                 class="btn btn-danger btn-sm" 
-                                onclick="javascript:return confirm(`Data ingin dihapus ?`);" title="Delete">
+                                onclick="javascript:return Remove_form('<?= base_url('admin/roles/delete/'.$r->id);?>');" 
+                                title="Delete">
                                 <i class="fa fa-times"></i> 
                             </a>
                         </td>

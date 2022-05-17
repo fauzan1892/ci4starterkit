@@ -36,7 +36,7 @@ $(document).ready(function() {
                     return `<center>
                                 <img src="${AvatarExists('<?= base_url('assets/uploads/avatar');?>/'+row.avatar)}" 
                                     class="img-fluid" 
-                                    style="width:50px;height:50px;">
+                                    style="width:50px;height:50px; border-radius:10px;">
                             </center>`;
                 }
             },

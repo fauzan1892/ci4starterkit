@@ -56,7 +56,7 @@
                     <!-- <input type="hidden" id="csrf_name_avatar" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" /> -->
                     <div class="form-group">
                         <label for="avatar">Avatar</label>
-                        <input type="file" class="form-control" name="avatar" id="avatar" placeholder="" />
+                        <input type="file" name="avatar" id="avatar" placeholder="" />
                         <input type="hidden" value="<?= $edit->avatar;?>" name="avatar_edit" id="avatar_edit">
                         <input type="hidden" value="<?= $edit->id;?>" name="id">
                     </div>

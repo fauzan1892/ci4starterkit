@@ -76,6 +76,30 @@
                 return "<?= base_url('assets/uploads/default/avatar-1.png');?>";
             }
         }
+
+        Remove_form = (url) => {
+            event.preventDefault(); // prevent form submit
+            var linkURL = url;
+            Swal.fire({
+                title: 'Delete Data !',
+                text: "Are you sure the data will be deleted ?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Confirm'
+            }).then((result) => {
+                if (result.value) {
+                    window.location.href = linkURL;
+                } else {
+                    swal({
+                        title: "Cancelled",
+                        icon: "success",
+                    })
+                }
+            });
+        }
+
     </script>
 </body>
 

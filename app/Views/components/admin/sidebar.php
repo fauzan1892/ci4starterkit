@@ -5,7 +5,9 @@
             src="<?= cek_file_avatar(auth()->avatar);?>" alt="User Image">
         <div>
             <p class="app-sidebar__user-name"><?= auth()->name;?></p>
-            <!-- <p class="app-sidebar__user-designation">Frontend Developer</p> -->
+            <p class="app-sidebar__user-designation">
+                <span class="badge badge-success"><?= auth()->roles;?></span>
+            </p>
         </div>
     </div>
     <ul class="app-menu">
@@ -25,19 +27,19 @@
             <ul class="treeview-menu">
                 <li>
                     <a class="treeview-item <?= $sidebar == 'users' ? 'active' : ''?>" href="<?= base_url('admin/users');?>">
-                        <i class="icon fa fa-user"></i>
+                        <i class="icon fa fa-user pr-1"></i>
                         Users
                     </a>
                 </li>
                 <li>
                     <a class="treeview-item <?= $sidebar == 'roles' ? 'active' : ''?>" href="<?= base_url('admin/roles');?>">
-                        <i class="icon fa fa-ban"></i>
+                        <i class="icon fa fa-ban pr-1"></i>
                         Roles
                     </a>
                 </li>
                 <li>
                     <a class="treeview-item" href="bootstrap-components.html">
-                        <i class="icon fa fa-pencil"></i>
+                        <i class="icon fa fa-pencil pr-1"></i>
                         Profil Aplikasi
                     </a>
                 </li>

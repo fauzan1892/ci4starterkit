@@ -61,11 +61,15 @@ class Users extends BaseController
         if(!$getid){ 
             echo 'Tidak ada data'; 
         }else{
-            $data = [
-                'edit' => $getid,
-                'roles' => $this->rolesmodel->getRoles()->getResult()
-            ]; 
-            echo view('contents/admin/users/index/modal-edit', $data);
+            if($this->request->getGet('json')){
+                echo json_encode($getid);
+            }else{
+                $data = [
+                    'edit' => $getid,
+                    'roles' => $this->rolesmodel->getRoles()->getResult()
+                ]; 
+                echo view('contents/admin/users/index/modal-edit', $data);
+            }
         }
     }
 
