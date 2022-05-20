@@ -33,12 +33,36 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('admin/dashboard/', 'Admin\Dashboard::index',['filter' => 'authGuard']);
 
-// users
-$routes->get('admin/users/', 'Admin\Users::index',['filter' => 'authGuard']);
-$routes->get('admin/users/profil', 'Admin\Users::profil',['filter' => 'authGuard']);
-$routes->post('admin/users/update', 'Admin\Users::update',['filter' => 'authGuard']);
-$routes->post('admin/users/data', 'Admin\Users::data',['filter' => 'authGuard']);
-$routes->post('form/process', 'Form::process');
+
+$routes->group('admin', function ($routes) {
+    /**
+     * --------------------------------------------------------------------
+     * Routes Admin/Users 
+     * --------------------------------------------------------------------
+     */
+    $routes->group('users', ['namespace' => 'App\Controllers\Admin'], static function ($routes) {
+        $routes->get('/', 'Users::index',['filter' => 'authGuard']);
+        $routes->get('profil', 'Users::profil',['filter' => 'authGuard']);
+        $routes->match(["get", "post"], 'data', 'Users::data',['filter' => 'authGuard']);
+        $routes->match(["get", "post"], 'edit', 'Users::edit',['filter' => 'authGuard']);
+        $routes->match(["get", "post"], 'store', 'Users::store',['filter' => 'authGuard']);
+        $routes->match(["get", "post"], 'update', 'Users::update',['filter' => 'authGuard']);
+        $routes->match(["get", "post"], 'delete', 'Users::delete',['filter' => 'authGuard']);
+        $routes->match(["get", "post"], 'update_avatar', 'Users::update_avatar',['filter' => 'authGuard']);
+    });
+    
+    /**
+     * --------------------------------------------------------------------
+     * Routes AdminRoles
+     * --------------------------------------------------------------------
+     */
+    $routes->group('roles', ['namespace' => 'App\Controllers\Admin'], static function ($routes) {
+        $routes->get('/', 'Roles::index',['filter' => 'authGuard']);
+        $routes->match(["get", "post"], 'store', 'Roles::store',['filter' => 'authGuard']);
+        $routes->match(["get", "post"], 'update', 'Roles::update',['filter' => 'authGuard']);
+        $routes->match(["get", "post"], 'delete', 'Roles::delete',['filter' => 'authGuard']);
+    });
+});
 
 /*
  * --------------------------------------------------------------------

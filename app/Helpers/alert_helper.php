@@ -36,7 +36,7 @@ function alert_swal() {
     echo '<script>
           Swal.fire({
               title: "Failed !",
-              html: "'.$session->getFlashdata('failed').'",
+              html: `'.$session->getFlashdata('failed').'`,
               icon: "warning",
               confirmButtonText: "Ok",
           });

@@ -10,7 +10,7 @@
             <label class="control-label">PASSWORD</label>
             <input class="form-control" type="password" name="password" placeholder="Password">
         </div>
-        <!-- <div class="form-group">
+        <div class="form-group">
             <div class="utility">
                 <div class="animated-checkbox">
                     <label>
@@ -19,7 +19,7 @@
                 </div>
                 <p class="semibold-text mb-2"><a href="#" data-toggle="flip">Forgot Password ?</a></p>
             </div>
-        </div> -->
+        </div>
         <div class="form-group btn-container">
             <button type="submit" 
                 class="btn btn-primary btn-block">
@@ -27,7 +27,7 @@
             </button>
         </div>
     </form>
-    <!-- <form class="forget-form" action="index.html">
+    <form class="forget-form" action="<?= base_url('login/reset');?>">
         <h3 class="login-head"><i class="fa fa-lg fa-fw fa-lock"></i>Forgot Password ?</h3>
         <div class="form-group">
             <label class="control-label">EMAIL</label>
@@ -43,5 +43,5 @@
                 </a>
             </p>
         </div>
-    </form> -->
+    </form>
 </div>

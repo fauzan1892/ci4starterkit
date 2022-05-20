@@ -46,6 +46,21 @@ class Login extends BaseController
         }
     }
 
+    public function reset()
+    {
+        $session = session();
+        $userModel = new UserModel();
+        $email = $this->request->getVar('email');
+        $data = $userModel->where('email', $email)->first();
+        if($data){
+            $session->setFlashdata('success', 'Please check your email to reset your password.');
+            return redirect()->to('/login');
+        }else{
+            $session->setFlashdata('failed', 'Email does not exist.');
+            return redirect()->to('/login');
+        }
+    }
+
     public function logout()
     {
         //hancurkan session 

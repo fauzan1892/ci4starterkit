@@ -48,9 +48,9 @@ class Roles extends BaseController
             return redirect()->to(base_url("admin/roles"));
 			// echo json_encode(["cek" => "success", "msg" => "Berhasil Tambah Data ! "]);
         }else{
-            $this->session->setFlashdata("failed"," Gagal Tambah Data ! ".$this->validation->listErrors());
+            $this->session->setFlashdata("failed"," Gagal Tambah Data ! ".\Config\Services::validation()->listErrors());
             return redirect()->to(base_url("admin/roles"));
-            // echo json_encode(["cek" => "error", "msg" => "".$this->validation->listErrors()]);
+            // echo json_encode(["cek" => "error", "msg" => "".\Config\Services::validation()->listErrors()]);
         }
     }                                            
     public function update()
@@ -73,9 +73,9 @@ class Roles extends BaseController
             return redirect()->to(base_url("admin/roles"));
 			// echo json_encode(["cek" => "success", "msg" => "Berhasil Update Data ! "]);
         }else{
-            $this->session->setFlashdata("failed"," Gagal Update Data ! ".$this->validation->listErrors());
+            $this->session->setFlashdata("failed"," Gagal Update Data ! ".\Config\Services::validation()->listErrors());
             return redirect()->to(base_url("admin/roles"));
-            // echo json_encode(["cek" => "error", "msg" => "".$this->validation->listErrors()]);
+            // echo json_encode(["cek" => "error", "msg" => "".\Config\Services::validation()->listErrors()]);
         }
     }   
 
