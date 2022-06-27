@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/css/main.css">
-    
+    <link rel="shortcut icon" href="<?= cek_file_image(infoweb()->app_favicon);?>">
     <!-- DataTables -->
     <link rel="stylesheet" href="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/admin/vali-admin-3.0.0/docs');?>/plugins/datatables-bs4/css/responsive.bootstrap4.min.css">
@@ -35,7 +35,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
-<body class="app sidebar-mini">
+<body class="app sidebar-mini rtl">
     <?= view('components/admin/navbar');?>
     <!-- Sidebar menu-->
     <?= view('components/admin/sidebar');?>

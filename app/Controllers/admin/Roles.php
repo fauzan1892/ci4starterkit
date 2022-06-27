@@ -1,11 +1,18 @@
 <?php
 /**
- * File      : Users.php
- * Web Name  : App Name
- * Developer : Your Name
- * E-mail    : Your Email
+ * App Name
  * 
- */
+ * @link       https://www.codekop.com/
+ * @version    1.0.1
+ * @copyright  Codekop Generator (c) 2022
+ * 
+ * File      : Roles.php
+ * Web Name  : Staterkit CodeIgniter 4
+ * Developer : Fauzan Falah
+ * E-mail    : fauzan1892@codekop.com
+ * 
+ * 
+**/
 namespace App\Controllers\Admin;
 use App\Controllers\BaseController;
 use App\Models\RolesModel;

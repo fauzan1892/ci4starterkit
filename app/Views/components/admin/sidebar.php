@@ -17,8 +17,12 @@
                 <span class="app-menu__label">Dashboard</span>
             </a>
         </li>
-        <li class="treeview <?= $sidebar == 'users' ? 'is-expanded' : ''?>
-            <?= $sidebar == 'roles' ? 'is-expanded' : ''?>">
+        <li class="treeview 
+            <?php 
+                if(in_array($sidebar,['users','roles','settings'])){ 
+                    echo 'is-expanded'; 
+                }
+            ?>">
             <a class="app-menu__item" href="#" data-toggle="treeview">
                 <i class="app-menu__icon fa fa-cog"></i>
                 <span class="app-menu__label">Pengaturan</span>
@@ -38,8 +42,8 @@
                     </a>
                 </li>
                 <li>
-                    <a class="treeview-item" href="bootstrap-components.html">
-                        <i class="icon fa fa-pencil pr-1"></i>
+                    <a class="treeview-item <?= $sidebar == 'settings' ? 'active' : ''?>" href="<?= base_url('admin/settings');?>">
+                        <i class="icon fa fa-cog pr-1"></i>
                         Profil Aplikasi
                     </a>
                 </li>

@@ -1,6 +1,8 @@
 <!-- Navbar-->
 <header class="app-header">
-    <a class="app-header__logo" href="<?= base_url('admin/dashboard');?>">Vali</a>
+    <a class="app-header__logo" href="<?= base_url('admin/dashboard');?>">
+        <?= infoweb()->app_name ?? 'App Name';?>
+    </a>
     <!-- Sidebar toggle button-->
     <a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
         aria-label="Hide Sidebar"></a>

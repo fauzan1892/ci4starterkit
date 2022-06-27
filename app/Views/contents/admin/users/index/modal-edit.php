@@ -8,8 +8,8 @@
     <div class="modal-body">
         <div class="bs-component" style="margin-top:-0.8pc;">
             <ul class="nav nav-tabs">
-                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#home">Detail</a></li>
-                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#profile">Edit</a></li>
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" id="ClickDetail" href="#home">Detail</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" id="ClickEdit" href="#profile">Edit</a></li>
             </ul>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade active show" id="home">
@@ -125,7 +125,7 @@
     </div>
     <div class="modal-footer border-0">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="submit" id="SaveEdit" class="btn btn-primary">Save</button>
     </div>
 </form>
 <script>
@@ -141,6 +141,13 @@
                 $('#pw_profil_edit i').removeClass("fa-eye-slash text-danger");
                 $('#pw_profil_edit i').addClass("fa-eye text-success");
             }
+        });
+        $('#SaveEdit').hide();
+        $('#ClickDetail').click(function(){
+            $('#SaveEdit').hide();
+        });
+        $('#ClickEdit').click(function(){
+            $('#SaveEdit').show();
         });
     });
 </script>

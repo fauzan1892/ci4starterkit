@@ -10,6 +10,7 @@
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="<?= cek_file_image(infoweb()->app_favicon);?>">
     <title><?= $title_web;?></title>
     <?= csrf_meta() ?>
 </head>
@@ -20,7 +21,7 @@
     </section>
     <section class="login-content">
         <div class="logo">
-            <h1>Vali</h1>
+            <h1><?= infoweb()->app_name ?? 'App Name';?></h1>
         </div>
         <?= alert_bs();?>
         <?= view($view_template);?>
