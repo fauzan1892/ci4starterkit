@@ -26,17 +26,19 @@
                         <td><?= $no;?></td>
                         <td><?=$r->roles;?></td>      
                         <td>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary btn-sm" 
-                                data-toggle="modal" data-target="#modelId<?= $r->id;?>">
-                                <i class="fa fa-edit"></i>
-                            </button>
-                            <a href="javascript:void(0)" 
-                                class="btn btn-danger btn-sm" 
-                                onclick="javascript:return Remove_form('<?= base_url('admin/roles/delete/'.$r->id);?>');" 
-                                title="Delete">
-                                <i class="fa fa-times"></i> 
-                            </a>
+                            <div class="btn-group" role="group" aria-label="">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-success btn-sm" 
+                                    data-toggle="modal" data-target="#modelId<?= $r->id;?>">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                                <a href="javascript:void(0)" 
+                                    class="btn btn-danger btn-sm" 
+                                    onclick="javascript:return Remove_form('<?= base_url('admin/roles/delete/'.$r->id);?>');" 
+                                    title="Delete">
+                                    <i class="fa fa-times"></i> 
+                                </a>
+                            </div>
                         </td>
                     </tr>
                     <?php $no++; }?>

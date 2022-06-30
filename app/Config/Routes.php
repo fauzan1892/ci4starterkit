@@ -62,6 +62,16 @@ $routes->group('admin', function ($routes) {
         $routes->match(["get", "post"], 'update', 'Roles::update',['filter' => 'authGuard']);
         $routes->match(["get", "post"], 'delete', 'Roles::delete',['filter' => 'authGuard']);
     });
+    
+    /**
+     * --------------------------------------------------------------------
+     * Routes Settings
+     * --------------------------------------------------------------------
+     */
+    $routes->group('settings', ['namespace' => 'App\Controllers\Admin'], static function ($routes) {
+        $routes->get('/', 'Settings::index',['filter' => 'authGuard']);
+        $routes->match(["get", "post"], 'update', 'Roles::update',['filter' => 'authGuard']);
+    });
 });
 
 /*
