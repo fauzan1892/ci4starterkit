@@ -66,16 +66,16 @@ class Users extends BaseController
         $id = $this->request->getPost('id');
         $getid = $this->usermodel->getUser($id)->getRow();
         if(!$getid){ 
-            echo 'Tidak ada data'; 
+            return 'Tidak ada data'; 
         }else{
             if($this->request->getGet('json')){
-                echo json_encode($getid);
+                return json_encode($getid);
             }else{
                 $data = [
                     'edit' => $getid,
                     'roles' => $this->rolesmodel->getRoles()->getResult()
                 ]; 
-                echo view('contents/admin/users/index/modal-edit', $data);
+                return view('contents/admin/users/index/modal-edit', $data);
             }
         }
     }

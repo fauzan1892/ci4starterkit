@@ -1,5 +1,18 @@
-<?php namespace App\Libraries;
-
+<?php 
+/**
+ * 
+ * @link       https://www.codekop.com/
+ * @version    1.0.1
+ * @copyright  Codekop Datatables Library (c) 2022
+ * 
+ * File      : Datatables.php
+ * Web Name  : Staterkit CodeIgniter 4
+ * Developer : Fauzan Falah
+ * E-mail    : fauzan1892@codekop.com
+ * 
+ * 
+**/
+namespace App\Libraries;
 class Datatables
 {
     public function __construct()
@@ -74,9 +87,9 @@ class Datatables
                         'recordsFiltered'   => intval($recordTotalFiltered),    
                         'data'              => $data,
                     );
-        $csrf_name = csrf_token();
-        $csrf_hash = csrf_hash();
-        $callback[$csrf_name] = $csrf_hash;   
+        // $csrf_name = csrf_token();
+        // $csrf_hash = csrf_hash();
+        // $callback[$csrf_name] = $csrf_hash;   
         echo json_encode($callback); // Convert array $callback ke json
     }
 } 
