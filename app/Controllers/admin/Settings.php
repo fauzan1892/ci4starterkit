@@ -43,8 +43,6 @@ class Settings extends BaseController
         $data = [
             'app_name' => $this->request->getPost("app_name", FILTER_SANITIZE_FULL_SPECIAL_CHARS),
             'app_description' => $this->request->getPost("app_description", FILTER_SANITIZE_FULL_SPECIAL_CHARS),
-            // 'app_favicon' => $this->request->getPost("app_favicon", FILTER_SANITIZE_FULL_SPECIAL_CHARS),
-            // 'app_logo' => $this->request->getPost("app_logo", FILTER_SANITIZE_FULL_SPECIAL_CHARS),
             'app_owner' => $this->request->getPost("app_owner", FILTER_SANITIZE_FULL_SPECIAL_CHARS),
             'app_phone' => $this->request->getPost("app_phone", FILTER_SANITIZE_FULL_SPECIAL_CHARS),
             'app_email' => $this->request->getPost("app_email", FILTER_SANITIZE_FULL_SPECIAL_CHARS),
@@ -52,6 +50,7 @@ class Settings extends BaseController
             'updated_at' => date("Y-m-d H:i:s"),
             'users_id' => auth()->id,
         ];
+        
         $app_favicon = $this->request->getFile('app_favicon');
         if ($app_favicon->isValid()) {
             $valFavicon = $this->validate([

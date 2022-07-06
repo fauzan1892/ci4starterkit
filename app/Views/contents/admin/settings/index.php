@@ -8,11 +8,11 @@
             <form method='POST' action='<?= base_url('admin/settings/update');?>' enctype="multipart/form-data">
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="app_name">App Name</label>
+                        <label for="app_name">Web Name</label>
                         <input type="text" class="form-control" value="<?= $edit->app_name;?>" name="app_name" id="app_name" placeholder=""/>
                     </div>
                     <div class="form-group">
-                        <label for="app_description">App Description</label>
+                        <label for="app_description">Description</label>
                         <textarea class="form-control" name="app_description" id="app_description" placeholder=""><?= $edit->app_description;?></textarea>
                     </div>
                     <div class="form-group">
