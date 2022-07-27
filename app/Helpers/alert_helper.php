@@ -1,5 +1,6 @@
 <?php 
-function alert_bs() {
+if(! function_exists('alert_bs')) {
+  function alert_bs() {
     $session = \Config\Services::session();
     if($session->getFlashdata('success')){
         echo '<div class="alert alert-success mb-3 alert-dismissible fade show" role="alert">
@@ -17,29 +18,31 @@ function alert_bs() {
         <strong>'.$session->getFlashdata('failed').'</strong> 
       </div>';
     }
+  }
 }
 
-function alert_swal() {
-  $session = \Config\Services::session();
-  if($session->getFlashdata('success')){
+if(! function_exists('alert_swal')) {
+  function alert_swal() {
+    $session = \Config\Services::session();
+    if($session->getFlashdata('success')){
+        echo '<script>
+                Swal.fire({
+                    title: "Success !",
+                    html: "'.$session->getFlashdata('success').'",
+                    icon: "success",
+                    confirmButtonText: "Ok",
+                });
+              </script>';
+    }
+    if($session->getFlashdata('failed')){
       echo '<script>
-              Swal.fire({
-                  title: "Success !",
-                  html: "'.$session->getFlashdata('success').'",
-                  icon: "success",
-                  confirmButtonText: "Ok",
-              });
-            </script>';
-      
-  }
-  if($session->getFlashdata('failed')){
-    echo '<script>
-          Swal.fire({
-              title: "Failed !",
-              html: `'.$session->getFlashdata('failed').'`,
-              icon: "warning",
-              confirmButtonText: "Ok",
-          });
-        </script>';
+            Swal.fire({
+                title: "Failed !",
+                html: `'.$session->getFlashdata('failed').'`,
+                icon: "warning",
+                confirmButtonText: "Ok",
+            });
+          </script>';
+    }
   }
 }
